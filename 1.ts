@@ -95,4 +95,120 @@
 // mySet.add("myValue")
 // mySet.delete("myValue")
 
+////////// Год опыта | Собеседование frontend | ЛАЙВ КОДИНГ
+/** @link  https://www.youtube.com/watch?v=w34Fk5HT4b8 */
+
+// const arr1 = [0, 10, 20, 30]
+// const fn1 = function graterThan10(n: number) {
+//     return n > 10
+// }
+//
+// const customFilter = (arr: number[], fn: (n: number, i?: number) => boolean | number) => {
+//     let res=[]
+//
+//     for (let i = 0; i < arr.length; i++) {
+//         if(fn(arr[i],i)) {
+//             res.push(arr[i])
+//         }
+//     }
+//
+//     return res
+//
+//
+//     // return arr.filter(fn)
+// }
+//
+// console.log(customFilter(arr1, fn1))
+//
+// const arr2 = [1, 2, 3]
+// const fn2 = function firstIndex(n: number, i: number) {
+//     return i === 0
+// }
+//
+// console.log(customFilter(arr2, fn2))
+//
+// const arr3 = [-2, -1, 0, 1, 2]
+// const fn3 = function PlusOne(n: number) {
+//     return n + 1
+// }
+//
+// console.log(customFilter(arr3, fn3))
+
+// const customExpect = (n: number): any => {
+//
+//     return {
+//         helper(condition: boolean, msg: string) {
+//             if (condition) {
+//                 return {
+//                     'value': true
+//                 }
+//             }
+//             throw new Error(msg)
+//         }
+//         ,
+//         toBe: function (m: number) {
+//             return this.helper(m === n, 'not equal')
+//         },
+//         notToBe: function (m: number) {
+//             return this.helper(m !== n, 'equal')
+//         }
+//     }
+// }
+//
+// console.log(customExpect(5).toBe(5))
+// console.log(customExpect(5).toBe(4))
+//
+// console.log(customExpect(5).notToBe(null))
+// console.log(customExpect(5).notToBe(5))
+
+// //     v.1
+// const addTwoPromises = async (pr1: Promise<number>, pr2: Promise<number>) => {
+//     const res1 = await pr1
+//     const res2 = await pr2
+//     console.log(res1 + res2)
+// }
+
+// //     v.2
+// const addTwoPromises = async (pr1: Promise<number>, pr2: Promise<number>) => {
+//     Promise.allSettled([pr1, pr2]).then(arr =>
+//         console.log(arr.reduce((acc, cur:any) => acc+=cur.value, 0)
+//         )
+//     )
+// }
+//
+// addTwoPromises(Promise.resolve(2), Promise.resolve(3))
+
+// function f(){
+//     a=1
+// }
+// console.log(a)
+
+// const a = {
+//     age: 28,
+//     sayAge:() =>{
+//         console.log(this.age)
+//     }
+// }
+//
+// const c=a.sayAge
+//
+// c()
+
+
+// a.sayAge=function (){ c()}
+//
+// a.sayAge()
+
+
+// function Human(age: number) {
+//     this.age = age;
+//     this.sayAge = () => console.log(this.age)
+// }
+//
+// const man = new Human(28)
+//
+// man.sayAge()
+
+
+
 
