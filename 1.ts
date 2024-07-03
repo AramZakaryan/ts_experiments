@@ -209,6 +209,26 @@
 //
 // man.sayAge()
 
+// const sum = (a: number, b: number) => a + b
+//
+// const newSum = sum.bind(null, 10)
+//
+// console.log(newSum(5))
 
+// const arr = [1, 2, 3, 3, 3, 3, 2, 2, 2, 3, 4, 4, 4, 5, 6]
+//
+// console.log(arr.reduce((acc, el) => {
+//         if (acc[el]) {
+//             acc[el]++;
+//         } else {
+//             acc[el] = 1;
+//         }
+//         return acc;
+//     }
+//     , {}))
 
+const arr = [1, 2, 3, 3, 3, 3, 2, 2, 2, 3, 4, 4, 4, 5, 6]
 
+const set = new Set(arr)
+
+console.log(Array.from(set))
