@@ -227,8 +227,43 @@
 //     }
 //     , {}))
 
-const arr = [1, 2, 3, 3, 3, 3, 2, 2, 2, 3, 4, 4, 4, 5, 6]
+// const arr = [1, 2, 3, 3, 3, 3, 2, 2, 2, 3, 4, 4, 4, 5, 6]
+//
+// const set = new Set(arr)
+//
+// console.log(Array.from(set))
 
-const set = new Set(arr)
 
-console.log(Array.from(set))
+// const turn = {cell: {row: 1, column: 2}, player: "X"}
+//
+// const {cell, player} = turn
+//
+// const {row, column} = cell
+//
+// console.log(row, column, player)
+
+// const [a, b, ...rest] = [10, 20, 30, 40, 50];
+//
+// console.log(rest);
+
+//
+// function pthFactor(n, p) {
+//     let factors = [];
+//
+//     // Iterate up to the square root of n
+//     for (let i = 1; i * i <= n; i++) {
+//         if (n % i === 0) {
+//             factors.push(i); // Add factor i
+//             if (i !== n / i) {
+//                 factors.push(n / i); // Add factor n / i if it's different from i
+//             }
+//         }
+//     }
+//
+//     factors.sort((a, b) => a - b); // Sort the factors in ascending order
+//
+//     // Return the p-th factor if it exists, otherwise return 0
+//     return (p <= factors.length) ? factors[p - 1] : 0;
+// }
+//
+// console.log(pthFactor(10, 3))
