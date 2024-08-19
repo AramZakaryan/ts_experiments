@@ -1,27 +1,3 @@
-// // const personMap = new Map([
-// //     ['name', 'Gago'],
-// //     ['age', 56],
-// //     [50, true],
-// //     [{address: "Yerevan"}, true],
-// //     [NaN, 'empty']
-// // ])
-// //
-// // console.log(
-// //     Object.fromEntries(personMap)   // {
-// //                                     // 50: true,
-// //                                     // name: 'Gago',
-// //                                     // age: 56,
-// //                                     // [object Object]: true,
-// //                                     // NaN: 'empty'
-// //                                     // }
-// // )
-// //
-// // const object = {'name': 'John'};
-// //
-// // console.log(
-// //     object.toString() // [object Object]
-// // )
-// // ;
 //
 //
 // const f = n => n % 2 ? 'Odd' : 'Even';
@@ -52,53 +28,24 @@
 // )
 
 
-const xml = new XMLHttpRequest()
+let medalG = {place1: 'Gold medal'}
+let medalS = {place2: 'Silver medal'}
+let medalB = {place3: 'Bronze medal'}
 
-xml.open('POST', 'https://jsonplaceholder.typicode.com/posts', true);
+const gamers = new WeakMap([
+    [medalG, 'Valo'],
+    [medalS, 'Ano'],
+    [medalB, 'Gago']
+])
 
-xml.responseType = 'json';
+medalB = null
 
-xml.setRequestHeader('Content-type', 'application/json');
-
-xml.onload = () => {
-    if (xml.status >= 400) {
-        console.error(xml.response);
-    }
-    console.log(xml.response);
-
-}
-
-xml.onerror = () => {
-    console.log(xml.response)
-}
-
-const body = {
-    title: 'foo',
-    body: 'bar',
-    userId: 1,
-}
-
-xml.send(JSON.stringify(body));
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(
+    gamers.has(medalB), // false
+    gamers  // {{place1: 'Gold medal'} => 'Valo', 
+    // {place2: 'Silver medal'} => 'Ano', 
+    // {place3: 'Bronze medal'} => 'Gago'}
+)
 
 
 
