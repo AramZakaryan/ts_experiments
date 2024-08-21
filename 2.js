@@ -1,3 +1,5 @@
+// this text is added in user 11
+
 const whatCentury = (y) => {
     // const c = Math.ceil(y / 100).toString();
     const c = y
@@ -11,17 +13,17 @@ const whatCentury = (y) => {
         suffix = 'nd'
     }
 
-        return {c, suffix}
+    return {c, suffix}
 
-    }
+}
 
 
-    console.log(
-        whatCentury(1),
-        // whatCentury(1999) // "20th"
-        // , whatCentury(2011) // "21st"
-        // , whatCentury(2154) // "22nd"
-        // , whatCentury(2259) // "23rd"
-        // , whatCentury(1124) // "12th"
-        // , whatCentury(2000) // "20th"
-    )
+console.log(
+    whatCentury(1),
+    // whatCentury(1999) // "20th"
+    // , whatCentury(2011) // "21st"
+    // , whatCentury(2154) // "22nd"
+    // , whatCentury(2259) // "23rd"
+    // , whatCentury(1124) // "12th"
+    // , whatCentury(2000) // "20th"
+)
