@@ -1,57 +1,31 @@
-//
-//
-// const f = n => n % 2 ? 'Odd' : 'Even';
-//
-// const evenOrOdd = new Proxy(
-//     function (n) {
-//         return f(n);
-//     },
-//     {
-//         get: (_, prop) => new Proxy(function () {
-//             return f(prop);
-//         }, {
-//             get: target => 'xuy',
-//             construct: _ => new String(f(prop))
-//         }),
-//         construct: (_, [n]) => new String(f(n)),
-//     });
-//
-// console.log(
-//     // evenOrOdd(2), //'Even'
-//     evenOrOdd[2], //'Even'
-//     // new evenOrOdd(2), //'Even'
-//     // new evenOrOdd[2], //'Even'
-//     // evenOrOdd(7), //'Odd'
-//     evenOrOdd[7], //'Odd'
-//     // new evenOrOdd(7), //'Odd'
-//     // new evenOrOdd[7], //'Odd'
-// )
+// this text is added in user 11
 
-let k = 0
+let k = 11
 
+const whatCentury = (y) => {
+    // const c = Math.ceil(y / 100).toString();
+    const c = y
+    const v = {0: 'th', 1: "st", 2: "nd", 3: "rd"}
+    let suffix
+    if (c === 1 && c !== 11) {
+        suffix = 'st'
+    } else if (c === 2 && c !== 12) {
+        suffix = 'nd'
+    } else if (c === 3 && c !== 13) {
+        suffix = 'nd'
+    }
 
-let medalG = {place1: 'Gold medal'}
-let medalS = {place2: 'Silver medal'}
-let medalB = {place3: 'Bronze medal'}
+    return {c, suffix}
 
-const gamers = new WeakMap([
-    [medalG, 'Valo'],
-    [medalS, 'Ano'],
-    [medalB, 'Gago']
-])
+}
 
-medalB = null
 
 console.log(
-    gamers.has(medalB), // false
-    gamers  // {{place1: 'Gold medal'} => 'Valo', 
-    // {place2: 'Silver medal'} => 'Ano', 
-    // {place3: 'Bronze medal'} => 'Gago'}
+    whatCentury(1),
+    // whatCentury(1999) // "20th"
+    // , whatCentury(2011) // "21st"
+    // , whatCentury(2154) // "22nd"
+    // , whatCentury(2259) // "23rd"
+    // , whatCentury(1124) // "12th"
+    // , whatCentury(2000) // "20th"
 )
-
-
-
-
-
-
-
