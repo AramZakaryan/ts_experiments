@@ -1,5 +1,7 @@
 // this text is added in user 11
 
+let k = 11
+
 const whatCentury = (y) => {
     // const c = Math.ceil(y / 100).toString();
     const c = y
