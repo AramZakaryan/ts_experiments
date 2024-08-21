@@ -27,7 +27,7 @@
 //     // new evenOrOdd[7], //'Odd'
 // )
 
-let k = 0
+let k = 12
 
 
 let medalG = {place1: 'Gold medal'}
